@@ -1,0 +1,21 @@
+source_file,source_column,target_table,target_column,transformation_or_rule
+customers.csv,customer_id,stg_customers,customer_id,Trim and validate not null
+customers.csv,first_name,stg_customers,first_name,Trim and reject blank
+customers.csv,last_name,stg_customers,last_name,Trim and reject blank
+customers.csv,email,stg_customers,email,Lowercase and validate basic format
+customers.csv,signup_date,stg_customers,signup_date,Parse ISO date; reject invalid value
+products.csv,product_id,stg_products,product_id,Trim and validate not null
+products.csv,product_name,stg_products,product_name,Trim and reject blank
+products.csv,category,stg_products,category,Trim and normalize category
+products.csv,unit_price,stg_products,unit_price,Decimal conversion; require >= 0
+orders.csv,order_id,stg_orders,order_id,Trim and validate not null
+orders.csv,customer_id,stg_orders,customer_id,Lookup customer business key
+orders.csv,order_date,stg_orders,order_date,Parse ISO date; reject invalid value
+orders.csv,order_status,stg_orders,order_status,Uppercase and validate allowed values
+orders.csv,payment_method,stg_orders,payment_method,Uppercase and normalize
+order_items.csv,order_item_id,stg_order_items,order_item_id,Cast to integer and validate uniqueness
+order_items.csv,order_id,stg_order_items,order_id,Lookup order; reject unmatched keys
+order_items.csv,product_id,stg_order_items,product_id,Lookup product; reject unmatched keys
+order_items.csv,quantity,stg_order_items,quantity,Cast to integer; require > 0
+order_items.csv,unit_price,stg_order_items,unit_price,Decimal conversion; require >= 0
+order_items.csv,discount_pct,stg_order_items,discount_pct,Require between 0 and 100
