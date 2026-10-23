@@ -1,0 +1,7 @@
+[Global]
+$$SRC_DIR=/path/to/project/data/source
+$$ETL_RUN_ID=LOCAL_RUN
+$$LOAD_DATE=2026-01-01
+
+# Replace paths and parameter syntax to match your PowerCenter environment.
+# Do not store passwords or secrets in this file.
