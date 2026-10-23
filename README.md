@@ -20,6 +20,12 @@ PostgreSQL staging tables -> dimensions -> fact_sales
        +-- SQL analytics for retail sales
 ```
 
+## Project explanation guide
+
+- [Download the project explanation PDF](docs/project-explanation.pdf)
+- [Read the Markdown explanation](docs/project-explanation.md)
+- The PDF is generated from the Markdown guide by [GitHub Actions](.github/workflows/generate-project-pdf.yml).
+
 ## Repository structure
 
 - `config/` — runtime parameter-file example
