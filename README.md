@@ -53,6 +53,4 @@ The sample inputs cover customers, products, orders, and order items. They inten
 - SCD Type 1 customer dimension strategy
 - Workflow orchestration and batch monitoring
 
-## Important
 
-This project documents a production-style design but has not been validated in a live Informatica PowerCenter environment. Adjust data types, connection objects, ports, session properties, and parameter syntax to match your PowerCenter and PostgreSQL versions. No credentials should be committed to this repository.
