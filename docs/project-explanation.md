@@ -196,3 +196,5 @@ Finally, clarify whether PROCESSING orders count as recognized sales. The suppli
 - `docs/powercenter_build_checklist.md` - implementation/acceptance checklist
 
 [Open the GitHub repository](https://github.com/shubham05jaiswal-coder/informatica-retail-data-warehouse)
+
+A GitHub Actions workflow builds the companion PDF from this Markdown guide whenever the guide or its generator changes.
